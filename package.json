@@ -1,6 +1,6 @@
 {
   "name": "stippled-image",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Custom element to show the stippled version of image",
   "main": "lib/stippled-image.js",
   "module": "lib/stippled-image.js",
