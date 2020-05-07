@@ -2,7 +2,7 @@
 
 *\<stippled-image\>* is a custom element to show the stippled version of an image. A stippled image gives a [Wall Street Journal's headcut](https://www.google.com/search?q=wall+street+journal+hedcut+obama&tbm=isch) like look. This effect is achieved by using *Weighted Voronoi Stippling* as shown in this [Observable notebook](https://observablehq.com/@mbostock/voronoi-stippling).
 
-![Stippled Obama](https://user-images.githubusercontent.com/833927/81326900-5f113200-904f-11ea-8ca0-a3e1928ddcd7.png)
+![Stippled Obama](https://user-images.githubusercontent.com/833927/81328553-f8414800-9051-11ea-9581-86434b72ace9.png)
 
 ## Using
 
