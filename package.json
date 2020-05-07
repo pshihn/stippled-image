@@ -1,0 +1,32 @@
+{
+  "name": "stippled-image",
+  "version": "0.1.0",
+  "description": "Custom element to show the stippled version of image",
+  "main": "lib/stippled-image.js",
+  "module": "lib/stippled-image.js",
+  "types": "lib/stippled-image.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pshihn/stippled-image.git"
+  },
+  "keywords": [
+    "stipple",
+    "stippled",
+    "stippled-image",
+    "custom-element",
+    "WebComponent"
+  ],
+  "author": "Preet Shihn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pshihn/stippled-image/issues"
+  },
+  "homepage": "https://github.com/pshihn/stippled-image#readme",
+  "devDependencies": {
+    "stipple": "^0.1.3",
+    "typescript": "^3.8.3"
+  }
+}
