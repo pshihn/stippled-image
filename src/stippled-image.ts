@@ -15,6 +15,7 @@ export class StippledImage extends HTMLElement {
   private _i?: HTMLImageElement;
   private _r = 3;
   private _c = '#000000';
+  private _sampling = 50;
 
   private worker?: Worker;
   private _workerUrl?: string;
@@ -44,7 +45,8 @@ export class StippledImage extends HTMLElement {
       'src',
       'points',
       'color',
-      'radius'
+      'radius',
+      'sampling'
     ]
   }
 
@@ -67,6 +69,9 @@ export class StippledImage extends HTMLElement {
         break;
       case 'color':
         this.color = newValue;
+        break;
+      case 'sampling':
+        this.sampling = +newValue;
         break;
     }
   }
@@ -123,7 +128,7 @@ export class StippledImage extends HTMLElement {
   }
 
   get points(): number {
-    return Math.min(20000, this._n || (this.width * this.height) / 50);
+    return Math.min(20000, this._n || (this.width * this.height) / this.sampling);
   }
 
   set points(value: number) {
@@ -164,6 +169,17 @@ export class StippledImage extends HTMLElement {
     if (this._r !== value) {
       this._r = value;
       this.draw();
+    }
+  }
+
+  get sampling(): number {
+    return this._sampling;
+  }
+
+  set sampling(value: number) {
+    if (this._sampling !== value) {
+      this._sampling = value;
+      this.refresh();
     }
   }
 
